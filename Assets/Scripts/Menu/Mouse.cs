@@ -5,11 +5,6 @@ public class Mouse : MonoBehaviour
     public Vector3 mouseWorldPosition;
     public Vector2 mousePos;
     [SerializeField] private Camera mainCamera;
-    public LayerMask Button;
-    public void Update()
-    {
-        
-    }
     public void SetMouse(InputAction.CallbackContext context)
     {
         mousePos = context.ReadValue<Vector2>();
@@ -20,16 +15,12 @@ public class Mouse : MonoBehaviour
     {
         if (context.started)
         {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero, Button);
-            var buttons = hit.collider.gameObject.GetComponent<Buttons>();
-            buttons.OnClick(mousePos);
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero, LayerMask.NameToLayer("MoveButton"));
+            if(hit.collider != null){
+                var buttons = hit.collider.gameObject.GetComponent<Buttons>();
+                buttons.OnClick();
+            }
         }
     }
        
  }
-    /*private void OnDrawGizmos()
-    {
-        Gizmos.color = gizmoColor;
-        Gizmos.DrawWireSphere(mouseWorldPosition, radius);
-    }*/
-
