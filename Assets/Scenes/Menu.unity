@@ -614,6 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
   moveButton: 0
+  CanBreak: 0
   duracao: 0
   timer: 0
   clicks: 0
@@ -792,6 +793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
   moveButton: 0
+  CanBreak: 0
   duracao: 0
   timer: 0
   clicks: 0
@@ -970,6 +972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
   moveButton: 0
+  CanBreak: 0
   duracao: 0
   timer: 0
   clicks: 0
@@ -1172,6 +1175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Buttons
   moveButton: 0
+  CanBreak: 0
   duracao: 0
   timer: 0
   clicks: 0

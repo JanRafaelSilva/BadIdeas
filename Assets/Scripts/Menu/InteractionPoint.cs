@@ -36,7 +36,14 @@ public class InteractionPoint : MonoBehaviour
     {
         if (gameObject.CompareTag("BotãoTerra"))
         {
-
+            
+        }
+        if (collision.gameObject.CompareTag("BotãoTerra")) // Criei outro, porque não sabia se era isso que você queria no primeiro
+        {
+            // Ativa o modo quebravel dos botões e reseta a variavel clicks (um por um)
+            GameObject.Find("BotãoPlay").GetComponent<Buttons>().StartBreak();
+            GameObject.Find("BotãoOptions").GetComponent<Buttons>().StartBreak();
+            GameObject.Find("BotãoQuit").GetComponent<Buttons>().StartBreak();
         }
     }
 }

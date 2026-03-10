@@ -3,6 +3,7 @@ using UnityEngine;
 public class Buttons : MonoBehaviour
 {
     public bool moveButton = false;
+    public bool CanBreak = false; // Variavel que ativa o modo quebravel dos botões
     private Animator buttonsAnime;
     public float duracao;
     public float timer;
@@ -13,7 +14,12 @@ public class Buttons : MonoBehaviour
     }
     public void OnClick()
     {
-        if (moveButton == false)
+        if (CanBreak)
+        {
+            clicks++;
+            buttonsAnime.SetInteger("BrokeEstage", clicks);
+        }
+        else if (moveButton == false)
         {
             moveButton = true;
            clicks += 1;
@@ -37,5 +43,11 @@ public class Buttons : MonoBehaviour
             buttonsAnime.SetBool("Touch", moveButton);
             timer = 0f;
         }
+    }
+    public void StartBreak()
+    {
+        clicks = 0;
+        CanBreak = true;
+        buttonsAnime.SetBool("Broking", CanBreak);
     }
 }
