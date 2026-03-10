@@ -34,12 +34,9 @@ public class InteractionPoint : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (gameObject.CompareTag("BotãoTerra"))
-        {
-            
-        }
         if (collision.gameObject.CompareTag("BotãoTerra")) // Criei outro, porque não sabia se era isso que você queria no primeiro
         {
+            Destroy(gameObject);
             // Ativa o modo quebravel dos botões e reseta a variavel clicks (um por um)
             GameObject.Find("BotãoPlay").GetComponent<Buttons>().StartBreak();
             GameObject.Find("BotãoOptions").GetComponent<Buttons>().StartBreak();
