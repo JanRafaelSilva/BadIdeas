@@ -8,6 +8,7 @@ public class Buttons : MonoBehaviour
     public float duracao;
     public float timer;
     [SerializeField]public int clicks;
+    [SerializeField] public ParticleSystem Particle;
     private void Awake()
     {
         buttonsAnime = GetComponent<Animator>();
@@ -23,6 +24,11 @@ public class Buttons : MonoBehaviour
         {
             moveButton = true;
            clicks += 1;
+        }
+        if(clicks >= 3 && CanBreak)
+        {
+            Destroy(gameObject);
+            Instantiate(Particle);
         }
     }
     public void Update()
