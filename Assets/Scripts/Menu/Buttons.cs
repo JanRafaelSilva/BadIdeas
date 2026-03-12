@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Buttons : MonoBehaviour
@@ -28,11 +29,12 @@ public class Buttons : MonoBehaviour
         if(clicks >= 3 && CanBreak)
         {
             Destroy(gameObject);
-            Instantiate(Particle);
+            Instantiate(Particle, transform.position, Particle.transform.rotation);
         }
     }
     public void Update()
     {
+        
         if(clicks == 4)
         {
             clicks = 0;

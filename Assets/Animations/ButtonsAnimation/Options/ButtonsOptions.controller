@@ -209,6 +209,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Touch
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Broking
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6902353057199921368}
   m_Solo: 0
