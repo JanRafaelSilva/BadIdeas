@@ -32,7 +32,7 @@ public class InteractionPoint : MonoBehaviour
             }
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("BotãoTerra")) // Criei outro, porque não sabia se era isso que você queria no primeiro
         {
