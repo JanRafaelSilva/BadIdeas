@@ -6,6 +6,8 @@ public class PlayerMoviment : MonoBehaviour
     public int playerSpeed;
     private float horizontaInput;
     private Rigidbody2D rigidBody;
+    public float jumpForce;
+    private bool jumped = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,5 +22,14 @@ public class PlayerMoviment : MonoBehaviour
     public void Move(InputAction.CallbackContext context) // Pega o input do playrt (A ou D) num valor de -1 ou 1
     {
         horizontaInput = context.ReadValue<Vector2>().x;
+    }
+    public void Jump(InputAction.CallbackContext context)
+    {
+        if (context.performed & !jumped)
+        {
+            print("Pulo");
+            jumped = true;
+            rigidBody.AddForce(Vector2.up * jumpForce * Time.fixedDeltaTime, ForceMode2D.Impulse);
+        }
     }
 }
