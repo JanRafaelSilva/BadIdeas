@@ -7,6 +7,7 @@ using System.Collections.Generic;
 
 public class BotaoPlay : MonoBehaviour
 {
+    [SerializeField] public ParticleSystem ParticleAgua;
     public Buttons play;
     bool ints = true;
     private void Start()
@@ -17,7 +18,7 @@ public class BotaoPlay : MonoBehaviour
     {
         if (play.clicks == 3 && play.CanBreak && ints)
         {
-            ParticleSystem par = Instantiate(play.ParticleAgua, play.ParticleAgua.transform.position, play.ParticleAgua.transform.rotation);
+            ParticleSystem par = Instantiate(ParticleAgua, ParticleAgua.transform.position, ParticleAgua.transform.rotation);
             par.transform.parent = transform;
             ints = false;
         }

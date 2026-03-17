@@ -359,6 +359,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c9dc6354-ff3d-4518-9c47-c5b46b5d9341
     m_ActionName: 'Player/Right[/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ee381b16-e081-407c-8be1-df26e14323c7
+    m_ActionName: 'Player/Jump[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 
@@ -439,7 +443,9 @@ MonoBehaviour:
   timer: 0
   clicks: 0
   Particle: {fileID: 7839401090833562806, guid: 5f0a436160f5c564284269de97e31202, type: 3}
-  ParticleAgua: {fileID: 0}
+  ParticleAgua2: {fileID: 5280495481469841285, guid: 5efe5fabd4292264a96f3ad83053012a, type: 3}
+  xParticle: 0
+  yParticle: 0
   botaoPlay: 0
 --- !u!61 &434039669
 BoxCollider2D:
@@ -622,7 +628,9 @@ MonoBehaviour:
   timer: 0
   clicks: 0
   Particle: {fileID: 7839401090833562806, guid: 5f0a436160f5c564284269de97e31202, type: 3}
-  ParticleAgua: {fileID: 746861986527694892, guid: 4b348f2a7b11f9247809dc3101cc3931, type: 3}
+  ParticleAgua2: {fileID: 5280495481469841285, guid: 5efe5fabd4292264a96f3ad83053012a, type: 3}
+  xParticle: 0
+  yParticle: 0
   botaoPlay: 1
 --- !u!61 &454814239
 BoxCollider2D:
@@ -756,6 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6538fdbb32372745869fe6ef90fca81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BotaoPlay
+  ParticleAgua: {fileID: 746861986527694892, guid: 4b348f2a7b11f9247809dc3101cc3931, type: 3}
   play: {fileID: 0}
 --- !u!1 &673245924
 GameObject:
@@ -896,7 +905,9 @@ MonoBehaviour:
   timer: 0
   clicks: 0
   Particle: {fileID: 0}
-  ParticleAgua: {fileID: 0}
+  ParticleAgua2: {fileID: 0}
+  xParticle: 0
+  yParticle: 0
   botaoPlay: 0
 --- !u!61 &1074702131
 BoxCollider2D:
@@ -1116,7 +1127,9 @@ MonoBehaviour:
   timer: 0
   clicks: 0
   Particle: {fileID: 7839401090833562806, guid: 5f0a436160f5c564284269de97e31202, type: 3}
-  ParticleAgua: {fileID: 0}
+  ParticleAgua2: {fileID: 5280495481469841285, guid: 5efe5fabd4292264a96f3ad83053012a, type: 3}
+  xParticle: 0
+  yParticle: 0
   botaoPlay: 0
 --- !u!95 &1138956160
 Animator:

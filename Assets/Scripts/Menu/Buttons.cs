@@ -10,7 +10,9 @@ public class Buttons : MonoBehaviour
     public float timer;
     [SerializeField]public int clicks;
     [SerializeField] public ParticleSystem Particle;
-    [SerializeField] public ParticleSystem ParticleAgua;
+    [SerializeField] public ParticleSystem ParticleAgua2;
+    public float xParticle;
+    public float yParticle;
     public bool botaoPlay;
     private void Awake()
     {
@@ -28,8 +30,14 @@ public class Buttons : MonoBehaviour
             moveButton = true;
            clicks += 1;
         }
+        if(clicks == 2 && CanBreak)
+        {
+            Instantiate(ParticleAgua2, new Vector2(transform.position.x + xParticle, transform.position.y + xParticle), ParticleAgua2.transform.rotation);
+        }
         if(clicks == 3 && CanBreak && !botaoPlay)
         {
+            var controle = ParticleAgua2.GetComponent<Destroyer>();
+            controle.test();
             Destroy(gameObject);
             Instantiate(Particle, transform.position, Particle.transform.rotation);
         }

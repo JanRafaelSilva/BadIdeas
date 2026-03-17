@@ -45,4 +45,5 @@ public class InteractionPoint : MonoBehaviour
             GameObject.Find("BotãoQuit").GetComponent<Buttons>().StartBreak();
         }
     }
+
 }
