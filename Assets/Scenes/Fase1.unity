@@ -211,17 +211,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &84882681 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4317574762922613782, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-  m_PrefabInstance: {fileID: 1146047878}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c1f1ac18269e4344b7a28f20372142c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMoviment
 --- !u!1 &761893332
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,46 +357,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 417174835580427895, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 417174835580427895, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
-      value: ee381b16-e081-407c-8be1-df26e14323c7
-      objectReference: {fileID: 0}
-    - target: {fileID: 417174835580427895, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
-      value: 'Player/Jump[/Keyboard/space]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 417174835580427895, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 417174835580427895, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 417174835580427895, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 84882681}
-    - target: {fileID: 417174835580427895, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 417174835580427895, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 417174835580427895, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerMoviment, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 417174835580427895, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 1882943278260581785, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.15
@@ -451,10 +400,6 @@ PrefabInstance:
     - target: {fileID: 3104078210849205775, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317574762922613782, guid: 50bd2ae1c2bdfa4469a324f264ddbd89, type: 3}
-      propertyPath: jumpForce
-      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
