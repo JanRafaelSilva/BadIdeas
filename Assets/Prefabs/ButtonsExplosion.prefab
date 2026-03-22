@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 495925053895291615}
   - component: {fileID: 7839401090833562806}
   - component: {fileID: 6886011616858142195}
-  - component: {fileID: 4853230985238885135}
   m_Layer: 0
   m_Name: ButtonsExplosion
   m_TagString: Untagged
@@ -4895,15 +4894,3 @@ ParticleSystemRenderer:
   m_MeshWeighting1: 1
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
---- !u!114 &4853230985238885135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4605631072932451434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdff768da365917498cc56d9db4022d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ParticleNoTime

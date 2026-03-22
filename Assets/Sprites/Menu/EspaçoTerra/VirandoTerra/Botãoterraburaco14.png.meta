@@ -3,8 +3,8 @@ guid: 34f39d28a46e41840b41d8039f527081
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1855809105996757710
-    second: "Bot\xE3oterraburaco14_0"
+      213: -8550732840159840809
+    second: "Bot\xE3oTerraBuraco14_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Bot\xE3oterraburaco14_0"
+      name: "Bot\xE3oTerraBuraco14_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 235c02a5377de36e0800000000000000
-      internalID: -1855809105996757710
+      spriteID: 7d5710d19c1b55980800000000000000
+      internalID: -8550732840159840809
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Bot\xE3oterraburaco14_0": -1855809105996757710
+      "Bot\xE3oTerraBuraco14_0": -8550732840159840809
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
